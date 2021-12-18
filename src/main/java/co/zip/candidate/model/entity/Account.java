@@ -5,6 +5,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 /**
  * Describes a user's account on the zip co. platform
  */
@@ -42,6 +44,7 @@ public class Account extends PersistableEntity {
         this.username = username;
     }
 
+    @JsonIgnore
     public String getPassword() {
         return password;
     }

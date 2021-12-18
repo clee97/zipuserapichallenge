@@ -16,6 +16,8 @@ public class ErrorResponse {
     
     private String correlationId;
     
+    public ErrorResponse() {}
+    
     public ErrorResponse(String errorMessage, ZipCoErrorCode errorCode, String correlationId) {
         this.errorCode = errorCode;
         this.errorMessage = errorMessage;
