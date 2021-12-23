@@ -11,5 +11,7 @@ To run integration / e2e API tests
 
 `./gradlew test`
 ## Deploying
+Basic microservice production architecture diagram can be viewed here
+![Screenshot](Architecture.png)
 
 ## Additional Information
